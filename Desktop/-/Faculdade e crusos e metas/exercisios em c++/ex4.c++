@@ -5,6 +5,7 @@ using namespace std;
 class Pessoa {
 public:
     string nome;
+    string cpf;  // faltava declarar aqui
 
     Pessoa(string n, string cp) : nome(n), cpf(cp) {}
 };
@@ -40,8 +41,8 @@ int main() {
     Funcionario f("Carlos", "55566677788", "Financeiro", 3500);
 
     cout << "Aluno: " << a.nome << ", CPF: " << a.cpf << ", Matricula: " << a.matricula << ", Curso: " << a.curso << endl;
-    cout << "Professor: " << p.nome << ", Disciplina: " << p.disciplina << ", Salario: " << p.salario << endl;
-    cout << "Funcionario: " << f.nome << ", Setor: " << f.setor << ", Salario: " << f.salario << endl;
+    cout << "Professor: " << p.nome << ", CPF: " << p.cpf << ", Disciplina: " << p.disciplina << ", Salario: " << p.salario << endl;
+    cout << "Funcionario: " << f.nome << ", CPF: " << f.cpf << ", Setor: " << f.setor << ", Salario: " << f.salario << endl;
 
     return 0;
 }
