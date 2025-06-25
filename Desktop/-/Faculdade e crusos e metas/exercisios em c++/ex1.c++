@@ -36,7 +36,8 @@ public:
         cout << "O ano do livro é: " << ano << endl;
     }
 };
-
+//// Função principal
+// Esta função cria um objeto da classe Livro, chama os métodos lerdados e exibird
 int main() {
     Livro livro1;      
     livro1.lerdados(); 
