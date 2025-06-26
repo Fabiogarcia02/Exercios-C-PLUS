@@ -1,4 +1,50 @@
-#include <iostream>
+ // ------------------------
+// Questão 8 (11,0 pontos)
+// ------------------------
+
+// (a) [5 pontos]
+// Crie uma classe chamada `Pagamento` usada em um sistema de e-commerce.
+// Atributos:
+// - comprador (string)
+// - valor (float)
+// - codProduto (int)
+//
+// Todos devem ser privados, com métodos getters e setters protegendo o acesso.
+//
+// No construtor parametrizado:
+// - impedir que `codProduto` seja menor que 0 ou maior que 5
+// - impedir que `valor` seja negativo
+
+// Crie duas classes que herdem de Pagamento:
+// - `CartaoCredito`, com atributo adicional: bandeiraCartao (string)
+// - `PIX`, com atributo adicional: codBanco (int)
+
+
+// (b) [5 pontos]
+// Crie uma função chamada `ganhoPorProduto` com o seguinte cabeçalho:
+//
+// float ganhoPorProduto(int m, int n, CartaoCredito v1[], PIX v2[], int k);
+//
+// Essa função deve:
+// - Receber um código de produto `k`
+// - Receber um vetor de `CartaoCredito` (v1) com `m` elementos
+// - Receber um vetor de `PIX` (v2) com `n` elementos
+//
+// - Se `k` < 0 ou > 5 → imprimir mensagem de erro e retornar 0
+// - Senão → somar todos os valores de produtos com codProduto == k
+// - Retornar esse total
+
+// (c) [1 ponto]
+// Crie a função `main()` para:
+// - Declarar vetores com 10 objetos de `CartaoCredito` e 10 de `PIX`
+// - Preencha os vetores com dados (pode ser fixo ou usando cin)
+// - Peça ao usuário um valor de `k`
+// - Chame `ganhoPorProduto()`
+// - Imprima o total arrecadado com esse produto
+ 
+
+ 
+ #include <iostream>
 #include <string>
 using namespace std;
 
