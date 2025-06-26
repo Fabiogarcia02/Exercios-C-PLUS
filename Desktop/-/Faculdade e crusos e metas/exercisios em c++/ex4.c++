@@ -5,7 +5,7 @@ using namespace std;
 class Pessoa {
 public:
     string nome;
-    string cpf;  // faltava declarar aqui
+    string cpf; 
 
     Pessoa(string n, string cp) : nome(n), cpf(cp) {}
 };
@@ -35,7 +35,7 @@ public:
 };
 
 int main() {
-    // Testando as classes
+  
     Aluno a("Joao", "12345678900", 2025001, "Engenharia");
     Professor p("Maria", "98765432100", "Matematica", 4500.50);
     Funcionario f("Carlos", "55566677788", "Financeiro", 3500);
