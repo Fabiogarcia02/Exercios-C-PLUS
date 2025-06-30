@@ -76,9 +76,9 @@ z(_(")(")
     }
 }
 
-// Função para mostrar HP com corações
+// Mostrar coraçoes de hp 
 void mostrarHPcoracoes(int hpAtual, int hpMax) {
-    int total = 10; // número total de corações
+    int total = 10; 
     int cheios = (hpAtual * total) / hpMax;
 
     cout << "HP: ";
